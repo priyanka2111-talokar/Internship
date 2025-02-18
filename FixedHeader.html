@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proinsure</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      padding-top: 80px; /* Prevent content from being hidden under fixed navbar */
+    }
+
+    .container {
+      width: 100%;
+    }
+
+    .nav {
+      height: 70px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+    }
+
+    .brand_name h2 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    .links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .links a {
+      color: black;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      color: white;
+      background-color: black;
+    }
+
+    .hero {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 10%;
+      background: none;
+    }
+
+    .hero .col-1-2 {
+      flex: 1;
+    }
+
+    .hero-heading {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .hero-text {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: black;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+      background: gray;
+    }
+
+    .feature, .about, .cta {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="brand_name">
+        <h2>Proinsure</h2>
+      </div>
+      <div class="links">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
+        <a href="#">VIEW PLANS</a>
+      </div>
+    </div>
+    
+    <section class="hero">
+      <div class="col-1-2">
+        <div class="line"></div>
+        <h1 class="hero-heading">Humanizing Your Insurance</h1>
+        <p class="hero-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Consequatur explicabo temporibus alias magni distinctio sunt unde
+          architecto ipsum dicta, praesentium amet est dolore.
+        </p>
+        <a class="btn btn-secondary" href="#">View Plans</a>
+      </div>
+      <div class="col-1-2">
+        <img
+          class="hero-img img-100"
+          src="assets/media/01.png"
+          alt="Man with his child"
+        />
+      </div>
+    </section>
+    <section class="hero">
+      <div class="col-1-2">
+        <div class="line"></div>
+        <h1 class="hero-heading">Humanizing Your Insurance</h1>
+        <p class="hero-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Consequatur explicabo temporibus alias magni distinctio sunt unde
+          architecto ipsum dicta, praesentium amet est dolore.
+        </p>
+        <a class="btn btn-secondary" href="#">View Plans</a>
+      </div>
+      <div class="col-1-2">
+        <img
+          class="hero-img img-100"
+          src="assets/media/01.png"
+          alt="Man with his child"
+        />
+      </div>
+    </section>
+    <section class="about padding">
+      <article class="container flex">
+        <div class="col-1-2">
+          <img
+            class="img-100"
+            src="assets/media/02.png"
+            alt="Man with kids in the field"
+          />
+        </div>
+        <div class="col-1-2">
+          <h1 class="heading">About the insure</h1>
+          <p class="text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Distinctio rem sequi, fuga laboriosam maiores voluptatum in
+            ducimus ipsum animi placeat labore!
+          </p>
+          <a class="btn" href="#">Know More</a>
+        </div>
+      </article>
+    </section>
+  </div>
+</body>
+</html>
