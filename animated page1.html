@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Text</title>
+    <style>
+          body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            overflow: hidden;
+            white-space: nowrap;
+            background-color: #f3f3f3;
+            padding: 20px;
+            position: relative;
+            line-height: 2000px;
+            width: 300px;
+            height: 10px;
+            margin:auto;
+            text-align: center;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+        }
+
+        .moving-text {
+            display: inline-block;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            position: absolute;
+            animation: moveText 10s linear infinite;
+        }
+
+        @keyframes moveText {
+            from {
+                right: -100%;
+            }
+            to {
+                right: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="moving-text">This text scrolling from left to right inside the div container.</span>
+    </div>
+
+</body>
+</html>
